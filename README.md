@@ -1,3 +1,5 @@
+Exporting c++ functions from `package1` to `package2` using Rcpp  
+
 in R, `devtools::install_github("mkln/rcppeztest/package1")` and  `devtools::install_github("mkln/rcppeztest/package2")`, then
 
 ```
