@@ -1,6 +1,6 @@
 //[[Rcpp::plugins(cpp11)]]
 //[[Rcpp::depends(RcppArmadillo)]]
-//[[Rcpp::interfaces(cpp)]]
+//[[Rcpp::interfaces(r, cpp)]]
 
 #include "RcppArmadillo.h"
 
