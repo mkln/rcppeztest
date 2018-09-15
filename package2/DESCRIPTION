@@ -7,5 +7,7 @@ Author: Who wrote it
 Maintainer: Who to complain to <yourfault@somewhere.net>
 Description: More about what it does (maybe more than one line)
 License: What license is it under?
+Depends: package1
 Imports: Rcpp (>= 0.12.18), package1
 LinkingTo: Rcpp, RcppArmadillo, package1
+Remotes: mkln/rcppeztest/package1
