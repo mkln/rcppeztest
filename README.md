@@ -2,7 +2,7 @@ Stackoverflow question: https://stackoverflow.com/questions/52340468/performance
 
 Exporting c++ functions from `package1` to `package2` using Rcpp  
 
-in R, `devtools::install_github("mkln/rcppeztest/package1")` and  `devtools::install_github("mkln/rcppeztest/package2")`, then
+in R,  `devtools::install_github("mkln/rcppeztest/package2")` (will install `package1` too), then
 
 ```
 library(magrittr)
@@ -21,3 +21,5 @@ rbenchmark::benchmark(
           replications=1000)
 
 ```
+
+Then `remove.packages(c("package1", "package2"))`. 
