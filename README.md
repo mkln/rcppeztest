@@ -1,3 +1,5 @@
+Stackoverflow question: https://stackoverflow.com/questions/52340468/performance-drop-when-including-code-exported-from-other-rcpp-package
+
 Exporting c++ functions from `package1` to `package2` using Rcpp  
 
 in R, `devtools::install_github("mkln/rcppeztest/package1")` and  `devtools::install_github("mkln/rcppeztest/package2")`, then
