@@ -1,11 +1,7 @@
-//[[Rcpp::plugins(cpp11)]]
-//[[Rcpp::depends(RcppArmadillo)]]
-//[[Rcpp::interfaces(r, cpp)]]
-
 #include "RcppArmadillo.h"
+#include "../inst/include/package1.h"
 
 // [[Rcpp::export]]
-arma::vec col_sums(const arma::mat& matty){
-  return arma::sum(matty, 0).t();
+arma::vec col_sums_internal(const arma::mat& matty){
+  return package1::col_sums(matty);
 }
-

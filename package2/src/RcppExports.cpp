@@ -28,10 +28,22 @@ BEGIN_RCPP
     return rcpp_result_gen;
 END_RCPP
 }
+// col_sums_copy
+arma::vec col_sums_copy(arma::mat test);
+RcppExport SEXP _package2_col_sums_copy(SEXP testSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< arma::mat >::type test(testSEXP);
+    rcpp_result_gen = Rcpp::wrap(col_sums_copy(test));
+    return rcpp_result_gen;
+END_RCPP
+}
 
 static const R_CallMethodDef CallEntries[] = {
     {"_package2_col_sums", (DL_FUNC) &_package2_col_sums, 1},
     {"_package2_col_sums_imported", (DL_FUNC) &_package2_col_sums_imported, 1},
+    {"_package2_col_sums_copy", (DL_FUNC) &_package2_col_sums_copy, 1},
     {NULL, NULL, 0}
 };
 

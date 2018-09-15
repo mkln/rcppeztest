@@ -9,3 +9,7 @@ col_sums_imported <- function(test) {
     .Call(`_package2_col_sums_imported`, test)
 }
 
+col_sums_copy <- function(test) {
+    .Call(`_package2_col_sums_copy`, test)
+}
+
